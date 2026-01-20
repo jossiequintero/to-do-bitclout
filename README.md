@@ -199,3 +199,4 @@ Implementado en global como predeterminado
 
 •	Deploy en Vercel ✅
 https://to-do-bitclout.vercel.app/
+![VercelP](Capturas/VercelP.png)
