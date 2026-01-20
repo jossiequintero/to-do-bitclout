@@ -60,7 +60,7 @@ npm test
 ### Patrón de diseño utilizado
 
 La prueba pide implementar y documentar el uso de un patrón de diseño.  
-En este caso se eligió el **Repository Pattern para manejo de datos**, de la lista propuesta (Observer, Factory, Strategy, MVC, Repository).
+En este caso se eligió el **Repository Pattern para manejo de datos**.
 
 **¿Qué problema resuelve?**
 
@@ -111,7 +111,7 @@ las tareas que llegan desde esa API también se guardan pasando por `TaskReposit
 ### Estructura del proyecto
 
 Estructura alineada con la sugerida en la prueba (adaptada a App Router):
-Cabe destacar que debido a las pruebas unitarias me apegue a la estrctura recomenda para el uso de App Router.
+Cabe destacar que debido a las pruebas unitarias me apegué a la estrctura recomenda para el uso de App Router.
 ![ErrorEnTest](Capturas/ErrorEnTest.png)
 
 ```text
@@ -123,16 +123,16 @@ app/
   api/demo-tasks/   # API simulada de tareas de ejemplo
 
 src/
-  pages/            # Reservado para pages clásicas (no se usa, se mantiene por requisitos)
+  pages/           clásicas (no se usa, se mantiene por requisitos)
   components/       # Lugar para componentes reutilizables
   modules/
     auth/           # Módulo reservado para lógica de auth adicional
-    tasks/          # Tipos y lógica de dominio de tareas (filterTasks, tipos)
+    tasks/          # Tipos y lógica tareas (filterTasks, tipos)
   services/
     authRepository.ts # Repository de autenticación
     taskRepository.ts # Repository de tareas/categorías
-  data/             # Reservado para datos estáticos/fixtures
-  utils/            # Utilidades genéricas si el proyecto crece
+  data/            
+  utils/            # Utilidades genéricas
 ```
 
 
@@ -189,8 +189,12 @@ Implementado en global como predeterminado
 ![Vercel](Capturas/Vercel.png)
 
 
+
 ### Bonus 
 •	Paginación o lazy loading ❌ 
+
 •	Dark mode  ✅
+
 •	Uso de Zustand o Context API para estado ❌
+
 •	Deploy en Vercel ✅
